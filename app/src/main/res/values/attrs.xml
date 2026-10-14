@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PassDividerView">
+        <attr name="sideNotchRadius" format="dimension" />
+        <attr name="smallNotchRadius" format="dimension" />
+        <attr name="smallNotchCount" format="integer" />
+        <attr name="topColor" format="color" />
+        <attr name="bottomColor" format="color" />
+    </declare-styleable>
+</resources>

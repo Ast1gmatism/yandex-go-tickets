@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">32dp</dimen>
+    <dimen name="details_padding">16dp</dimen>
+    <dimen name="gradient_height">78dp</dimen>
+    <dimen name="header_height">96dp</dimen>
+
+    <dimen name="card_corner">28dp</dimen>
+    <dimen name="card_margin_top">16dp</dimen>
+    <dimen name="card_header_height">128dp</dimen>
+    <dimen name="divider_height">18dp</dimen>
+    <dimen name="bill_body_height">306dp</dimen>
+
+    <dimen name="bill_title_size">26sp</dimen>
+    <dimen name="bill_direction_size">16sp</dimen>
+
+    <dimen name="timer_padding_top">74dp</dimen>
+    <dimen name="timer_label_size">20sp</dimen>
+    <dimen name="timer_margin_top">15dp</dimen>
+    <dimen name="timer_note_margin_top">64dp</dimen>
+    <dimen name="timer_note_size">13sp</dimen>
+
+    <dimen name="details_title_size">20sp</dimen>
+    <dimen name="details_title_margin_top">23dp</dimen>
+    <dimen name="detail_row_height">56dp</dimen>
+    <dimen name="detail_icon_size">26dp</dimen>
+    <dimen name="detail_label_size">13sp</dimen>
+    <dimen name="detail_value_size">16sp</dimen>
+</resources>

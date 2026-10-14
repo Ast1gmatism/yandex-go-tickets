@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Слабый верхний градиент: #6dc2fb -> прозрачный, доходит до шапки билета -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:startColor="@color/gradient_blue_soft"
+        android:endColor="#00FFFFFF"
+        android:type="linear" />
+</shape>

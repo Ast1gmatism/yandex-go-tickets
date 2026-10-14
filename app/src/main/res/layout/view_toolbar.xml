@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height">
+
+    <ImageButton
+        android:id="@+id/toolbarBack"
+        style="@style/Widget.Go.IconButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/back"
+        android:src="@drawable/ic_arrow_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="14dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="76dp"
+        android:paddingEnd="76dp">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ys_text_bold"
+            android:includeFontPadding="false"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            tools:text="Мои билеты" />
+
+        <TextView
+            android:id="@+id/toolbarSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/ys_text_regular"
+            android:text="@string/screen_subtitle"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/toolbarAction"
+        style="@style/Widget.Go.IconButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/refresh"
+        android:src="@drawable/ic_refresh" />
+</FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Простая иконка троллейбуса для лончера (foreground) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- штанги -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,30 L34,17 L29.5,20.5 L39.5,33.5 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M64,30 L74,17 L78.5,20.5 L68.5,33.5 Z" />
+    <!-- кузов -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,32 h44 a6,6 0 0 1 6,6 v30 a6,6 0 0 1 -6,6 h-44 a6,6 0 0 1 -6,-6 v-30 a6,6 0 0 1 6,-6 z" />
+    <!-- окна -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M35,38 h17 v12 h-17 z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M56,38 h17 v12 h-17 z" />
+    <!-- двери -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M35,55 h11 v15 h-11 z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M62,55 h11 v15 h-11 z" />
+    <!-- колёса -->
+    <path
+        android:fillColor="#1E88E5"
+        android:pathData="M40,74 a5,5 0 1 0 0.1,0 z" />
+    <path
+        android:fillColor="#1E88E5"
+        android:pathData="M68,74 a5,5 0 1 0 0.1,0 z" />
+</vector>

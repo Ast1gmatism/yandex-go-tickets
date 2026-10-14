@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Билеты GO</string>
+
+    <string name="screen_title">Мои билеты</string>
+    <string name="screen_subtitle">Везде указано местное время</string>
+    <string name="back">Назад</string>
+    <string name="refresh">Обновить</string>
+
+    <string name="ticket_valid">Срок действия билета</string>
+    <string name="ticket_show_to_controller">Покажите экран контролеру</string>
+    <string name="unit_min">мин</string>
+    <string name="unit_sec">сек</string>
+    <string name="unit_ms">мс</string>
+
+    <string name="details_title">Детали</string>
+    <string name="detail_registration">Регистрационный номер</string>
+    <string name="detail_board">Бортовой номер</string>
+    <string name="detail_carrier">Перевозчик</string>
+    <string name="detail_valid_until">Действует до</string>
+    <string name="detail_direction">Направление</string>
+    <string name="direction_one_way">В одну сторону</string>
+    <string name="carrier_value">Троллейбусное Депо №1</string>
+
+    <string name="create_ticket">Создать билет</string>
+    <string name="new_ticket_title">Новый билет</string>
+    <string name="new_ticket_subtitle">Выберите маршрут и направление, укажите номер троллейбуса</string>
+    <string name="field_digits">Номер троллейбуса</string>
+    <string name="digits_helper">4 цифры номера троллейбуса</string>
+    <string name="digits_preview">%1$s · %2$s</string>
+    <string name="error_digits">Введите 4 цифры, например 2021</string>
+    <string name="route_select_error">Сначала выберите маршрут</string>
+    <string name="ticket_created_toast">Билет создан</string>
+    <string name="refreshed_toast">Обновлено · билетов: %1$d</string>
+
+    <string name="new_route_title">Новый маршрут</string>
+    <string name="new_route_subtitle">Маршрут сохранится и появится в списке</string>
+    <string name="field_trolley_number">Номер троллейбуса</string>
+    <string name="field_stop_a">Остановка 1</string>
+    <string name="field_stop_b">Остановка 2</string>
+    <string name="error_trolley_number">Укажите номер троллейбуса</string>
+    <string name="error_stop_a">Укажите первую остановку</string>
+    <string name="error_stop_b">Укажите вторую остановку</string>
+    <string name="route_saved_toast">Маршрут сохранён</string>
+    <string name="action_save">Сохранить</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_delete">Удалить</string>
+    <string name="delete_route_title">Удалить маршрут?</string>
+    <string name="delete_route_message">Маршрут «%1$s» будет удалён</string>
+    <string name="badge_preset">Пресет</string>
+    <string name="badge_custom">Мой</string>
+
+    <string name="no_tickets">Билетов нет</string>
+    <string name="no_tickets_hint">Создайте билет — он появится здесь и будет действовать ровно час</string>
+    <string name="content_desc_ticket">Билет троллейбуса</string>
+    <string name="content_desc_icon">Иконка</string>
+    <string name="demo_notice">Это учебное приложение. Билет не является проездным документом</string>
+    <string name="delete_ticket">Удалить билет</string>
+    <string name="ticket_deleted_toast">Билет удалён</string>
+</resources>
