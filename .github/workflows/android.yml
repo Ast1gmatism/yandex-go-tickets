@@ -16,8 +16,11 @@ jobs:
           distribution: temurin
           java-version: '21'
 
-      - name: Android SDK
-        uses: android-actions/setup-android@v3
+      - name: Android SDK (предустановленный + нужные пакеты)
+        run: |
+          yes | sdkmanager --licenses > /dev/null || true
+          sdkmanager --install "platform-tools" "platforms;android-34" "build-tools;34.0.0" > /dev/null
+          sdkmanager --version
 
       - name: Тесты и сборка
         run: |
