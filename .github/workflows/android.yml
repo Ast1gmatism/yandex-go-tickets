@@ -24,9 +24,18 @@ jobs:
           sdkmanager --install "platform-tools" "platforms;android-34" "build-tools;34.0.0" > /dev/null
 
       - name: Тесты и сборка
+        env:
+          TROLLEY_SHOT_DIR: ${{ github.workspace }}/build
         run: |
           chmod +x gradlew
           ./gradlew :app:testDebugUnitTest :app:assembleDebug :app:assembleRelease --stacktrace
+
+      - name: Скриншоты (артефакт)
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: build/screenshots/
+          if-no-files-found: ignore
 
       - name: Отчёты тестов (при падении)
         if: failure()

@@ -26,7 +26,7 @@ import org.robolectric.annotation.GraphicsMode
 import java.io.File
 import java.io.FileOutputStream
 
-/** Рендер экранов в PNG (Robolectric NATIVE) — файлы в /home/user/screenshots. */
+/** Рендер экранов в PNG (Robolectric NATIVE). Каталог — через TROLLEY_SHOT_DIR, по умолчанию /home/user. */
 @RunWith(RobolectricTestRunner::class)
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 @Config(sdk = [34], qualifiers = "ru-rRU-w411dp-h891dp-xhdpi")
@@ -127,7 +127,9 @@ class ScreenshotTest {
         canvas.drawColor(Color.WHITE)
         view.draw(canvas)
 
-        val file = File("/home/user/" + path)
+        // Каталог можно переопределить (CI), по умолчанию — как в песочнице
+        val base = System.getenv("TROLLEY_SHOT_DIR") ?: "/home/user"
+        val file = File(base, path)
         file.parentFile?.mkdirs()
         FileOutputStream(file).use { bitmap.compress(Bitmap.CompressFormat.PNG, 100, it) }
         println("Снимок: " + file.absolutePath + " " + width + "x" + target)
