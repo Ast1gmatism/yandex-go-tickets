@@ -10,7 +10,9 @@
         <item name="colorAccent">@color/bill_header</item>
         <item name="colorOnPrimary">#FFFFFF</item>
         <item name="android:windowBackground">@color/screen_bg</item>
-        <item name="android:statusBarColor">@color/gradient_blue</item>
+        <!-- Прозрачный статус-бар: градиент начинается от верха экрана, под иконками времени/сети -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:navigationBarColor">@color/screen_bg</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
         <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>

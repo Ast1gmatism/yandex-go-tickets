@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.trolleygo.tickets.R
+import com.trolleygo.tickets.ui.EdgeToEdge
 import com.trolleygo.tickets.data.model.Ticket
 import com.trolleygo.tickets.databinding.ActivityMainBinding
 import com.trolleygo.tickets.databinding.ItemTicketBinding
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        EdgeToEdge.apply(window, binding.scroll)
 
         binding.toolbarView.toolbarTitle.typeface = Fonts.regular(this)
         binding.toolbarView.toolbarSubtitle.typeface = Fonts.regular(this)

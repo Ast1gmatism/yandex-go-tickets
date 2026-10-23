@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Верхняя панель: Назад | «Мои билеты» + подпись | Обновить.
+     Геометрия по референсу (от низа статус-бара): центр кнопок +26dp,
+     заголовок 11.9-23.4dp, подпись 31.3-42dp. Заголовок — регуляр. -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/header_height">
+    android:layout_height="50dp">
 
     <ImageButton
         android:id="@+id/toolbarBack"
@@ -11,7 +14,7 @@
         android:layout_height="48dp"
         android:layout_gravity="start|top"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="3dp"
         android:contentDescription="@string/back"
         android:src="@drawable/ic_arrow_back" />
 
@@ -19,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:paddingStart="76dp"
@@ -29,7 +32,7 @@
             android:id="@+id/toolbarTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/ys_text_bold"
+            android:fontFamily="@font/ys_text_regular"
             android:includeFontPadding="false"
             android:textColor="@color/text_primary"
             android:textSize="16sp"
@@ -39,8 +42,9 @@
             android:id="@+id/toolbarSubtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="3dp"
             android:fontFamily="@font/ys_text_regular"
+            android:includeFontPadding="false"
             android:text="@string/screen_subtitle"
             android:textColor="@color/text_secondary"
             android:textSize="12sp" />
@@ -53,7 +57,7 @@
         android:layout_height="48dp"
         android:layout_gravity="end|top"
         android:layout_marginEnd="4dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="3dp"
         android:contentDescription="@string/refresh"
         android:src="@drawable/ic_refresh" />
 </FrameLayout>

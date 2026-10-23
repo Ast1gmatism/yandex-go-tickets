@@ -8,6 +8,7 @@ import com.trolleygo.tickets.R
 import com.trolleygo.tickets.databinding.ActivityTicketDetailBinding
 import com.trolleygo.tickets.ui.Fonts
 import com.trolleygo.tickets.ui.main.TicketCardBinder
+import com.trolleygo.tickets.ui.EdgeToEdge
 import com.trolleygo.tickets.ui.main.TicketDetailsBinder
 
 /**
@@ -25,8 +26,9 @@ class TicketDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTicketDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        EdgeToEdge.apply(window, binding.detailContent)
 
-        binding.detailToolbar.toolbarTitle.typeface = Fonts.bold(this)
+        binding.detailToolbar.toolbarTitle.typeface = Fonts.regular(this)
         binding.detailToolbar.toolbarSubtitle.typeface = Fonts.regular(this)
         binding.detailsTitle.typeface = Fonts.bold(this)
         binding.detailToolbar.toolbarTitle.setText(R.string.screen_title)

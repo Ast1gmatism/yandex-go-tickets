@@ -14,6 +14,7 @@
         android:background="@drawable/bg_screen_gradient" />
 
     <LinearLayout
+        android:id="@+id/detailContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -22,7 +23,7 @@
             android:id="@+id/detailToolbar"
             layout="@layout/view_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="50dp" />
 
         <include
             android:id="@+id/ticketCard"
@@ -30,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/screen_padding"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="23dp"
             android:layout_marginEnd="@dimen/screen_padding" />
 
         <LinearLayout
@@ -46,7 +47,9 @@
                 android:id="@+id/detailsTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/details_title_margin_top"
+                android:layout_marginTop="33dp"
+                android:layout_marginBottom="25dp"
+                android:includeFontPadding="false"
                 android:fontFamily="@font/ys_text_bold"
                 android:text="@string/details_title"
                 android:textColor="@color/text_primary"
@@ -90,7 +93,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.3" />
+                android:layout_weight="0.18" />
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>

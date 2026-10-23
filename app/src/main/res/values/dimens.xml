@@ -9,7 +9,7 @@
     <dimen name="card_margin_top">16dp</dimen>
     <dimen name="card_header_height">128dp</dimen>
     <dimen name="divider_height">18dp</dimen>
-    <dimen name="bill_body_height">306dp</dimen>
+    <dimen name="bill_body_height">299dp</dimen>
 
     <dimen name="bill_title_size">26sp</dimen>
     <dimen name="bill_direction_size">16sp</dimen>
