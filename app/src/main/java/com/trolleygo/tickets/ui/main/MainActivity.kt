@@ -35,6 +35,10 @@ class MainActivity : AppCompatActivity() {
         binding.toolbarView.toolbarTitle.typeface = Fonts.regular(this)
         binding.toolbarView.toolbarSubtitle.typeface = Fonts.regular(this)
         binding.toolbarView.toolbarTitle.setText(R.string.screen_title)
+        binding.versionChip.text = getString(
+            R.string.version_chip,
+            packageManager.getPackageInfo(packageName, 0).versionName ?: "?"
+        )
         binding.toolbarView.toolbarSubtitle.setText(R.string.screen_subtitle)
         binding.toolbarView.toolbarBack.apply {
             contentDescription = getString(R.string.back)

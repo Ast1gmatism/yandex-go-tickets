@@ -57,4 +57,5 @@
     <string name="demo_notice">Это учебное приложение. Билет не является проездным документом</string>
     <string name="delete_ticket">Удалить билет</string>
     <string name="ticket_deleted_toast">Билет удалён</string>
+    <string name="version_chip">Версия %1$s</string>
 </resources>
